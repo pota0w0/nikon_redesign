@@ -1,0 +1,36 @@
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:455px;
+	right:225px;
+	overflow:hidden;
+	width:47px;
+	height:46px;
+	border:none;
+	text-indent:-999em; /* 태그에 텍스트 컨텐츠를 날릴 떄 사용 */
+	background:url(../img/common/top_btn.png) no-repeat left top;
+}
+
+#toTopHover {
+	background:url(../img/common/top_btn.png) no-repeat left -46px;
+	width:47px;
+	height:46px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}

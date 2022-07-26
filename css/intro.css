@@ -1,0 +1,26 @@
+.main{ width: 1180px; height: 500px; padding: 340px 40px 0; box-sizing: border-box; margin: 0 auto; background-image: url(../img/nikon/intro_main_bg.jpg); margin-bottom: 100px; }
+.main p{ font-size: 28px; color: #fff; font-weight: 500; }
+.main .eng{ float: left; margin-bottom: 40px; }
+.main .kor{ float: right; }
+
+.contents01, .contents02, .contents03{ width: 1180px; height: 400px; margin-bottom: 150px; }
+.contents .text{ width: 540px; height: 400px; }
+.contents h4{ width: 540px; height: 85px; font-size: 24px;  margin-bottom: 100px; color: #fff; }
+.contents p{ width: 540px; font-size: 18px; text-align: justify; color: #fff; }
+
+.contents01 .text, .contents03 .text{ float: right; }
+.contents02 .text{ float: left; }
+.contents01 .text, .contents02 .text, .contents03 .text{ opacity: 0; transition: 0.7s; }
+.contents01 .text.on, .contents02 .text.on, .contents03 .text.on{ opacity: 1; }
+
+.contents01 img, .contents03 img{ width: 590px; float: left; position: relative; }
+.contents02 img{ width: 590px; float: right; position: relative; }
+
+.business h4{ width: 100%; height: 25px; font-size: 25px; line-height: 25px; text-align: center; color: #fff; margin-bottom: 40px; }
+.business .swiper-container { width: 100%; height: 330px; }
+.business .swiper-slide{ width: 360px; height: 280px; }
+.business .swiper-slide img{ width: 360px; height: 240px; margin-bottom: 20px; }
+.business .swiper-slide p{ font-size: 18px; font-weight: 500; color: #fff; }
+.swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{ height: 2px; top: 320px; }
+.swiper-pagination-progressbar{ background-color: #333; }
+:root{ --swiper-theme-color: #f3b548; }

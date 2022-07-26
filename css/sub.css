@@ -1,0 +1,40 @@
+/* header */
+header { background-color: #09090a; }
+.hwrap .hside input{ background-color: rgba(051,051,051,0.5);}
+
+/* mainbanner */
+.mainpadding{ width: 100%; padding-top: 100px; /* header 높이만큼 처리 */}
+.mainbanner{ width: 100%; min-width: 1180px; height: 500px; background-repeat: no-repeat; background-size: cover; position: relative; }
+.mainbanner01{ background-image: url(../img/sub/sub_mainbanner_01.jpg); }
+.mainbanner02{ background-image: url(../img/sub/sub_mainbanner_02.jpg); }
+.mainbanner03{ background-image: url(../img/sub/sub_mainbanner_03.jpg); }
+.mainbanner04{ background-image: url(../img/sub/sub_mainbanner_04.jpg); }
+.mainbanner05{ background-image: url(../img/sub/sub_mainbanner_05.jpg); }
+.mainbanner06{ background-image: url(../img/sub/sub_mainbanner_06.jpg); }
+
+.mainbanner h2{ width: 100%; height: 42px; padding-top: 230px; box-sizing: border-box; font-size: 42px; font-weight: bold; color: #fff; text-align: center; }
+
+/* invigator */
+.invigator{ width: 1000px;  height: 40px; background-color: transparent; position: absolute; top: 460px; left: calc(100% - 80%); }
+.maininvi .home{ border: none; }
+.maininvi > li, .activeinvi > li { float: left; height: 100%; border-left: 1px solid #fff; padding: 0 25px; }
+.maininvi > li a, .activeinvi > li a{ font-size: 14px; font-weight: normal;  color: #fff; }
+.maininvi .h3text a.on{ font-weight: 500; color: #ffcc00; }
+.maininvi .h3text button{ display: inline-block; width: 20px; height: 20px; text-indent: -999em; border: none; background-color: transparent; background-image: url(../img/sub/togglemenu_btn.png); background-repeat: no-repeat; background-position: center; margin-left: 20px; }
+.activeinvi > li a:hover{ color: #ffcc00; }
+.activeinvi > li a:hover:after{ content: ''; display: block; width: 100%; height: 1px; background-color: #ffcc00; margin: 0 auto; position: relative; top: 5px; }
+
+/* subtitle */
+.subtitle{ padding-top: 40px; }
+.subtitle h3{ font-size: 34px; line-height: 34px; text-align: center; color: #fff; }
+.subtitle p{ width: 100%; height: 40px; padding-top: 20px; font-size: 16px; line-height: 20px; color: #bdbdbd; text-align: center; }
+.subcontents{ width: 1180px; overflow: hidden; padding: 40px 0 80px; margin: 0 auto; }
+
+
+
+
+
+
+
+
+
