@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>NIKON KOREA</title>
+        <link rel="shortcut icon" href="img/common/favicon.png">
+        <!--ios용 아이콘-->
+        <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/common/favicon_ios.png">
+        <!--안드로이드용 아이콘-->
+        <link rel="icon" type="images/png" sizes="192x192" href="img/common/favicon_android.png">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/ui.totop.css">
+        <link rel="stylesheet" href="css/colorbox.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/easing.js"></script>
+        <script src="js/jquery.ui.totop.js"></script>
+        <script src="js/jquery.colorbox-min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>  
+    </head>
+
+    <body>
+       <!--popup-->
+        <div class="popup">
+            <div class="ptop">
+                <a href="#closepopup" title="팝업창닫기"></a>
+                <h3>NOTICE &amp; MOBILE</h3>
+                <p class="pleft">
+                    본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 
+                    만들어 졌습니다. 홈페이지의 일부 내용과 이미지 등은 
+                    그 출처가 따로 있음을 밝힙니다. <br>
+                    본 사이트는 HTML5와 CSS3를 기준으로 하여
+                    크롬, 사파리, 오페라, 파이어폭스,
+                    IE9이상의 브라우저에 맞춘 홈페이지입니다.
+                </p>
+                <p class="pright">
+                    아래의 QR코드를 스캔해주세요.
+                    니콘 코리아 모바일 페이지로 <br>
+                    이동합니다.
+                    <span class="popupqr"><img src="img/main/popup_qrcode.png" alt="NIKON 모바일QR코드"></span>
+                </p>
+            </div>
+            <div class="pbottom">
+                <form>
+                    <label for="chkBox">오늘 하루 보이지 않기</label>
+                    <input type="checkbox" id="chkBox">
+                </form>
+            </div>
+        </div>
+        <div class="blackbg"></div>
+        <header>
+            <div class="hwrap">
+                <h1><a href="index.html"><img src="img/common/header_logo.png" alt="니콘코리아 로고"></a></h1>
+                <div class="hside">
+                    <a class="global" href="#">Global Site</a>
+                    <ul class="tnav">
+                        <li><a href="hside/login.html" class="login">Login</a></li>
+                        <li><a href="hside/join.html">Join</a></li>
+                        <li><a href="hside/nps.html">NPS</a></li>
+                        <li class="last"><a href="hside/faq.html">FAQ</a></li>
+                    </ul>
+                    <form>
+                        <input type="text" name="search">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <nav class="gnb">
+                    <ul class="gnb_list">
+                        <li>
+                            <a href="nikon/intro.html" class="mainnav">NIKON KOREA</a>
+                            <ul class="subnav">
+                                <li><a href="nikon/intro.html">회사소개</a></li>
+                                <li><a href="nikon/notice.html">공지사항</a></li>
+                                <li><a href="nikon/contact.html">CONTACT</a></li>
+                                <li><a href="nikon/adopt.html">채용정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product/slr.html" class="mainnav">PRODUCT</a>
+                            <ul class="subnav">
+                                <li><a href="product/slr.html">SLR 카메라</a></li>
+                                <li><a href="product/mirror.html">미러리스 카메라</a></li>
+                                <li><a href="product/compact.html">콤펙트 카메라</a></li>
+                                <li><a href="product/lens.html">렌즈</a></li>
+                                <li><a href="product/binlaser.html">쌍안경 &amp; 거리측정기</a></li>
+                                <li><a href="product/access.html">액세사리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="academy/acprodu.html" class="mainnav">ACADEMY</a>
+                            <ul class="subnav">
+                                <li><a href="academy/acprodu.html">아카데미 소개</a></li>
+                                <li><a href="academy/offline.html">오프라인 강의</a></li>
+                                <li><a href="academy/calender.html">일정</a></li>
+                                <li><a href="academy/anotice.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="shop/esproduct.html" class="mainnav">E-SHOP</a>
+                            <ul class="subnav">
+                                <li><a href="shop/esproduct.html">제품별 구매</a></li>
+                                <li><a href="shop/esgoods.html">상품 기획전</a></li>
+                                <li><a href="shop/package.html">패키지 &amp; 아울렛</a></li>
+                                <li><a href="shop/point.html">포인트샵</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="event/evproce.html" class="mainnav">EVENT</a>
+                            <ul class="subnav">
+                                <li><a href="event/evproce.html">진행 중인 이벤트</a></li>
+                                <li><a href="event/evend.html">종료된 이벤트</a></li>
+                                <li><a href="event/evwin.html">당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                        <li class="last">
+                            <a href="coustom/activation.html" class="mainnav">CUSTOMER</a>
+                            <ul class="subnav">
+                                <li><a href="coustom/activation.html ">정품등록</a></li>
+                                <li><a href="coustom/as.html">A/S 안내</a></li>
+                                <li><a href="coustom/dowload.html">다운로드</a></li>
+                                <li><a href="coustom/custenqui.html">고객문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="mslider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li class="ms01">
+                        <div class="wrap">
+                            <p class="kor">혁신적인 풀프레임 미러리스의 탄생</p>
+                            <p class="eng">ALL NEW FULL FRAME SYSTEM</p>
+                            <img src="img/main/mslider_logo_01.png" alt="메인 슬라이더 zseries 로고">
+                        </div>
+                    </li>
+                    <li class="ms02">
+                        <div class="wrap">
+                            <p class="kor">프로의 순간을 포착하다</p>
+                            <p class="eng">INSPIRATION IN EVERY DETAIL</p>
+                            <img src="img/main/mslider_logo_02.png" alt="메인 슬라이더 D850 로고">
+                        </div>
+                    </li>
+                </ul>
+                <div class="num">
+                    <p class="page"></p>
+                    <p class="numicon">/</p>
+                    <p class="allpage"></p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <h2>NIKON PRODUCT</h2>
+            <div class="pbox">
+                <div class="product01">
+                    <a href="product/slr.html">
+                        <h3 class="entitle">Single Lens Reflex Camera</h3>
+                        <h3 class="kotitle">SLR 카메라</h3>
+                        <p class="ptext">전문가를 위한 FX 포맷부터 입문자를 위한 DX 포맷까지 니콘 최고의 기술이 집약된 다양한 라인업의 SLR 카메라</p>
+                        <span><img src="img/main/product_over_icon.png" alt="더보기"></span>
+                    </a>
+                </div>
+                <div class="product02">
+                    <a href="product/mirror.html">
+                        <h3 class="entitle">Mirrorless Camera</h3>
+                        <h3 class="kotitle">미러리스 카메라</h3>
+                        <p class="ptext">혁신적 풀프레임 미러리스의 탄생, 뛰어난 성능과 디자인의 니콘 미러리스 카메라</p>
+                        <span><img src="img/main/product_over_icon.png" alt="더보기"></span>
+                    </a>
+                </div>
+                <div class="product03">
+                    <a href="product/compact.html">
+                        <h3 class="entitle">Digital Compact Camera</h3>
+                        <h3 class="kotitle">콤펙트 카메라</h3>
+                        <p class="ptext">남녀노소 누구나 간편하게 촬영을 즐길 수 있는 니콘의 콤팩트 카메라</p>
+                        <span><img src="img/main/product_over_icon.png" alt="더보기"></span>
+                    </a>
+                </div>
+                <div class="product04">
+                    <a href="product/lens.html">
+                        <h3 class="entitle">NIKKOR Lens</h3>
+                        <h3 class="kotitle">렌즈</h3>
+                        <p class="ptext">니콘의 독자적인 광학 기술이 집약된 렌즈교환식 카메라용 NIKKOR 렌즈.</p>
+                        <span><img src="img/main/product_over_icon.png" alt="더보기"></span>
+                    </a>
+                </div>
+                <div class="product05">
+                    <a href="product/binlaser.html">
+                        <h3 class="entitle">Binoculars / Laser Rangefinder</h3>
+                        <h3 class="kotitle">쌍안경 / 거리측정기</h3>
+                        <p class="ptext">조금 더 가깝게 세상을 바라볼 수 있는 니콘의 또 다른 우수한 기술력</p>
+                        <span><img src="img/main/product_over_icon.png" alt="더보기"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="imgslider">
+            <div class="imgtext">
+                <p class="text">
+                    Unlock the future with <br>
+                    the power of light
+                </p>
+                <a href="product/slr.html" class="show">SHOW ALL</a>
+            </div>
+            <div class="slick-list">
+                <img src="img/main/imgslider_img_01.jpg" alt="df카메라 이미지">
+                <img src="img/main/imgslider_img_02.jpg" alt="렌즈 이미지">
+                <img src="img/main/imgslider_img_03.jpg" alt="카메라 이미지">
+                <img src="img/main/imgslider_img_04.jpg" alt="df카메라 이미지">
+                <img src="img/main/imgslider_img_05.jpg" alt="렌즈 이미지">
+                <img src="img/main/imgslider_img_06.jpg" alt="카메라 이미지">
+            </div> 
+        </div>
+        <div class="fiximg">
+            <ul>
+                <li class="fix01">
+                    <a href="product/mirror.html">
+                        <p>
+                            우월함이라는 것은 이런 것
+                            <span><img src="img/main/fiximg_logo_01.png" alt="z서비스 로고"></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="fix02">
+                    <a href="product/lens.html">
+                        <p>
+                            놀라운 순간일수록 강하다
+                            <span><img src="img/main/fiximg_logo_02.png" alt="니콘 렌즈 로고"></span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="video">
+           <div class="video-wrap">
+                <div class="vidplay">
+                    <div class="playvideo">
+                        <iframe src="https://www.youtube.com/embed/9ddbROweikk" name="video"></iframe>
+                    </div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide on" data-index="0"><a href="https://www.youtube.com/embed/9ddbROweikk" target="video"><img src="img/main/video_slider_img_01.gif" alt=""></a></div>
+                        <div class="swiper-slide" data-index="1"><a href="https://www.youtube.com/embed/3Ge3Vzt7pXc" target="video"><img src="img/main/video_slider_img_02.gif" alt=""></a></div>
+                        <div class="swiper-slide" data-index="2"><a href="https://www.youtube.com/embed/pmox-hsi8j4" target="video"><img src="img/main/video_slider_img_03.gif" alt=""></a></div>
+                        <div class="swiper-slide" data-index="3"><a href="https://www.youtube.com/embed/KGgBklYLu3c" target="video"><img src="img/main/video_slider_img_04.gif" alt=""></a></div>
+                        <div class="swiper-slide" data-index="4"><a href="https://www.youtube.com/embed/65o1SOI8BxM" target="video"><img src="img/main/video_slider_img_05.gif" alt=""></a></div>
+                        <div class="swiper-slide" data-index="5"><a href="https://www.youtube.com/embed/jTuqsF9RAGc" target="video"><img src="img/main/video_slider_img_06.gif" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <h2>NIKON GALLERY</h2>
+            <div class="gallery01">
+                <div class="gimg01">
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/gallery_img_01.jpg" alt="갤러리 사진 01">
+                            <div class="more">
+                                <p class="mtitle">Z7</p>
+                                <p class="mtext">f/1.8 ISO 100 35mm 1/100s</p>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+                <div class="gimg02">
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/gallery_img_02.jpg" alt="갤러리 사진 02">
+                            <div class="more">
+                                <p class="mtitle">Z6</p>
+                                <p class="mtext"> f/6.3 ISO 5000 24mm 1/125s</p>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="gimg03">
+                <a href="#">
+                    <figure>
+                        <img src="img/main/gallery_img_03.jpg" alt="갤러리 사진 03">
+                        <div class="more">
+                            <p class="mtitle">D850</p>
+                            <p class="mtext">f/8 ISO 100 35mm 0.77s</p>
+                        </div>
+                    </figure>
+                </a>
+            </div>
+            <div class="gallery02">
+                <div class="gimg04">
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/gallery_img_04.jpg" alt="갤러리 사진 04">
+                            <div class="more">
+                                <p class="mtitle">Df</p>
+                                <p class="mtext">f/2 ISO 800 35mm 1/640s</p>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+                <div class="gimg05">
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/gallery_img_05.jpg" alt="갤러리 사진 05">
+                            <div class="more">
+                                <p class="mtitle">D500</p>
+                                <p class="mtext">f/11 ISO 64 24mm 4s</p>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery03">
+                <div class="gimg06">
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/gallery_img_06.jpg" alt="갤러리 사진 06">
+                            <div class="more">
+                                <p class="mtitle">D750</p>
+                                <p class="mtext">f/5.6 ISO 400 60mm 1/1000s</p>
+                            </div>s
+                        </figure>
+                    </a>
+                </div>
+                <div class="gimg07">
+                    <a href="#">
+                        <figure>
+                            <img src="img/main/gallery_img_07.jpg" alt="갤러리 사진 07">
+                            <div class="more">
+                                <p class="mtitle">Z7</p>
+                                <p class="mtext">f/11 ISO 250 24mm 1/1600s</p>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="newsevent">
+            <div class="event">
+                <div class="netitle">
+                    <h2>EVENT</h2>
+                    <a href="event/evproce.html" class="add" title="이벤트 더보기"></a>
+                </div>
+                <a href="event/evproce.html" class="event01">
+                    <div class="eventtext01">
+                        <h3>#데일리Z</h3>
+                        <p>니콘Z 시리즈 유저를 위한 데일리 사진전</p>
+                    </div>
+                </a>
+                <a href="event/evproce.html" class="event02">
+                    <div class="eventtext02">
+                        <h3>정품등록 프로모션</h3>
+                        <p>풀 프레임 미러리스의 탄생 Z7</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news">
+                <div class="netitle">
+                    <h2>NEWS</h2>
+                    <a href="nikon/notice.html" class="add" title="뉴스 더보기"></a>
+                </div>
+                <div class="news01">
+                    <a href="nikon/notice.html">
+                        <figure>
+                            <img src="img/main/news_img_01.gif" alt="뉴스 이미지 01">
+                        </figure>
+                        <div class="newstext">
+                            <h3 class="newstitle01">Z 마운트 시스템 호환 대구경 중망원 단초점 렌즈 ‘NIKKOR Z 85mm f/1.8 S’ 발표</h3>
+                            <p class="newstext01">광학기기 전문기업 니콘은 니콘 Z 마운트를 채용한 풀프레임 미러리스 카메라용 대구경 중망원 단초점 렌즈 ‘NIKKOR Z 85mm f/1.8 S’를 31일 발표했다. </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="news02">
+                    <a href="nikon/notice.html">
+                        <figure>
+                            <img src="img/main/news_img_02.gif" alt="뉴스 이미지 02">
+                        </figure>
+                        <div class="newstext">
+                            <h3 class="newstitle02">작고 가벼운 신규 레이저 거리측정기‘COOLSHOT 20 GII’ 발표</h3>
+                            <p class="newstext02">한국프로골프협회(KPGA) 공식 거리측정기이자 세계랭킹 1위 고진영 선수가 즐겨 사용하는 것으로 알려진 니콘 COOLSHOT(쿨샷)에 직선거리에 유효한 작고 가벼운 모델이 추가됐다.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="news03">
+                    <a href="nikon/notice.html">
+                        <figure>
+                            <img src="img/main/news_img_03.gif" alt="뉴스 이미지 03">
+                        </figure>
+                        <div class="newstext">
+                            <h3 class="newstitle03">사진 초보 및 가족 고객 대상 니콘스쿨 특별 강좌 개설</h3>
+                            <p class="newstext03">사진촬영에 대한 관심도가 높아지는 5월을 맞이해 니콘스쿨 특별 강좌를 진행한다고 29일 밝혔다. 이번 특별 강의는 사진 초보를 위한 ‘니콘 카메라와 렌즈의 선택’과 가족사진 촬영을 계획하고 있는 고객 대상의 ‘아빠 포토그래퍼! 가족사진을 부탁해’ 강좌로 구성된다.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="ftop">
+                <div class="fcontent">
+                    <div class="footerlogo">
+                        <a href="../index.html">
+                            <h2 class="flogo"><img src="../img/common/footer_logo.png" alt="니콘코리아 푸터 로고"></h2>
+                            <img src="../img/common/footer_img.png" alt="푸터 이미지">
+                        </a>
+                    </div>
+                    <div class="fmenu">
+                        <ul>
+                            <li class="fmenu01">
+                                <a href="../nikon/intro.html">
+                                    <h3>회사소개</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="#">니콘 소개</a></li>
+                                    <li><a href="#">CEO 인사말</a></li>
+                                    <li><a href="#">경영이념</a></li>
+                                    <li><a href="#">홈보센터</a></li>
+                                    <li><a href="#">채용정보</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                </ul>
+                            </li>
+                            <li class="fmenu02">
+                                <a href="../coustom/activation.html">
+                                    <h3>고객지원</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="#">고객지원 메인</a></li>
+                                    <li><a href="#">정품등록</a></li>
+                                    <li><a href="#">A/S 안내</a></li>
+                                    <li><a href="#">제품 활용정보</a></li>
+                                    <li><a href="#">다운로드</a></li>
+                                    <li><a href="#">고객의 소리</a></li>
+                                </ul>
+                            </li>
+                            <li class="fmenu03">
+                                <a href="../nps.html">
+                                    <h3>NPS</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="#">개요 &amp; 이벤트 서포트</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">My NPS</a></li>
+                                    <li><a href="#">장비 대여 신청</a></li>
+                                    <li><a href="#">NPS Q&amp;A</a></li>
+                                    <li><a href="#">신규회원 신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="fmenu04">
+                                <a href="../faq.html">
+                                    <h3>회원서비스</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="#">로그인</a></li>
+                                    <li><a href="#">회원가입</a></li>
+                                    <li><a href="#">ID 찾기</a></li>
+                                    <li><a href="#">비밀번호 찾기</a></li>
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">사이트 이용약관</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fright">
+                        <div class="family">
+                            <button>Family site<span class="fadd"></span></button>
+                            <ul>
+                                <li><a href="https://www.nikon.com/precision" target="_blank">Precision Equipment</a></li>
+                                <li><a href="https://nikon-inst.co.kr:11174/new/main/main.php?" target="_blank">Microscope Solutions</a></li>
+                                <li class="last"><a href="https://nikon-inst.co.kr:11174/new/main/main.php?" target="_blank">Industrial Metrology</a></li>
+                            </ul>
+                        </div>
+                        <div class="fmenu05">
+                            <ul>
+                                <li><a href="#">My Nikon</a></li>
+                                <li><a href="#">My E Shop</a></li>
+                                <li class="last"><a href="#">My Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="sns">
+                            <a href="#"><img src="img/common/footer_sns_01.png" alt="페이스북"></a>
+                            <a href="#"><img src="img/common/footer_sns_02.png" alt="인스타그램"></a>
+                            <a href="#"><img src="img/common/footer_sns_03.png" alt="트위터"></a>
+                            <a href="#"><img src="img/common/footer_sns_04.png" alt="유튜브"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addre">
+                <address>
+                    상호명 : 주식회사 니콘이미징코리아 / 대표이사 : 정해환 / 사업자등록번호 : 104-81-98839 / 통신판매업신고 : 제2018-서울강남-00065호 <br>
+                    주소 : 서울특별시 강남구 테헤란로 440 포스코센터 서관 14층 (대치동 892) (㉾06194) <br>
+                    전화번호 : 080-800-6600 / 팩스 : 02-2068-8488 / 이메일 : Support.Nikc@nikon.com / 고객센터 운영시간 : 평일 09:00 ~ 18:00 (토·일·공휴일 휴무
+                </address>
+                <p>
+                    COPYRIGHT&copy;2019 
+                    &nbsp; NIKON KOREA. &nbsp; ALL RIGHTS RESERVED.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
